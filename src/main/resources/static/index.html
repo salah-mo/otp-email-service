@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="otpForm">
+    <h2>Generate OTP</h2>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <button onclick="generateOTP()">Generate OTP</button>
+</div> <!-- This closes the otpForm div -->
+<div id="verifyForm" style="display:none;">
+    <h2>Verify OTP</h2>
+    <input type="text" id="otp" placeholder="Enter OTP" required>
+    <button onclick="verifyOTP()">Verify OTP</button>
+    <div id="timer"></div> <!-- Timer display -->
+    <button id="newOtpButton" onclick="requestNewOTP()">Request New OTP</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
